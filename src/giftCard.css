@@ -50,6 +50,9 @@
 .dQuantity {
   color: var(--primaryColor7);
   border: 1px solid var(--primaryColor7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dName {
   color: var(--primaryColor7);
