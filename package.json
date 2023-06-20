@@ -1,6 +1,6 @@
 {
-  "name": "eway",
-  "private": true,
+  "name": "ewill",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
