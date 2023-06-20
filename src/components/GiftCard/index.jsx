@@ -7,12 +7,12 @@ const GiftCard = (props) => {
         {props.grade.charCodeAt(props.grade) >= 65 &&
         props.grade.charCodeAt(props.grade) < 68 ? (
           <>
-            <img src="/public/certificateA.png" alt="certificateA" />
+            <img src="certificateA.png" alt="certificateA" />
             <p className="grade">{props.grade}</p>
           </>
         ) : (
           <>
-            <img src="/public/certificateD.png" alt="certificateD" />
+            <img src="certificateD.png" alt="certificateD" />
             <p className="grade">{props.grade}</p>
           </>
         )}
