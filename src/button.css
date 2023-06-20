@@ -12,6 +12,9 @@
   background: #b57556;
   border-radius: 50px;
   text-decoration: none;
+  margin: 0 0 8px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 .defaultButton:hover {
   background: #d3a995;
@@ -22,4 +25,8 @@
 }
 .failureButton {
   color: #ffe3e3;
+}
+
+.failureMessage {
+  color: #e06d6d;
 }

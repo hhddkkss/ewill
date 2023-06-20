@@ -1,0 +1,50 @@
+.lighthouseContainer {
+  padding: 40px 0;
+  background: var(--primaryColor4);
+}
+
+.lighthouseContainer .wrap {
+  width: 274px;
+  height: 298px;
+  margin: 0 auto;
+}
+.lighthouseContainer .text {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.lighthouseContainer .text::before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: "";
+  width: 1px;
+  height: 75px;
+  background-color: var(--primaryColor1);
+  transform: rotate(-15deg);
+}
+.lighthouseContainer .text::after {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  content: "";
+  width: 1px;
+  height: 75px;
+  background-color: var(--primaryColor1);
+  transform: rotate(15deg);
+}
+
+.lighthouseContainer .text .number {
+  color: var(--primaryColor2);
+}
+
+.lighthouseContainer .text .title {
+  color: var(--primaryColor1);
+}
+
+.lighthouseContainer .wrap .img-wrap {
+  text-align: center;
+}

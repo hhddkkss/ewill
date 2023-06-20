@@ -1,7 +1,7 @@
 import React from "react";
-
+import "../backgroundWave.css";
 const AnimationWave = () => {
-  return <img src="backgroundWave.svg" alt="backgroundWave" />;
+  return <div className="wave"></div>;
 };
 
 export default AnimationWave;

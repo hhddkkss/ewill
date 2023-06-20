@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import DefaultButton from "../components/Button/Button";
+import DefaultButton from "../components/Button";
 import Title from "../components/Title/Title";
 import "../FirstSection.css";
 
@@ -14,13 +14,16 @@ const FirstSection = () => {
       </div>
 
       <DefaultButton
+        href="#form"
         text={"FORM"}
         style={{ boxShadow: "0px 0px 20px rgba(250, 163, 163, 0.91)" }}
+        className={"buttonAnimation"}
       ></DefaultButton>
       <div className="content">
         <img src="/sup.svg" className="sup" />
         <img src="/oars.png" className="oars" />
-
+        <img src="/public/bubble.svg" alt="bubble1" className="bubble1" />
+        <img src="/public/bubble.svg" alt="bubble2" className="bubble2" />
         <Title text={"paragraph"}></Title>
         <ol className="paragraphWrap">
           {paragraph1.map((item, i) => (
@@ -44,10 +47,7 @@ const FirstSection = () => {
           </li>
           <li className="paragraphContent">
             Donec ultrices sapien
-            <span className="emphasize2">
-              {" "}
-              vitae leo venenatis ullamcorper.
-            </span>
+            <span className="emphasize2">vitae leo venenatis ullamcorper.</span>
           </li>
         </ol>
         <img src="anotherSup.svg" alt="anotherSup" className="anotherSup" />

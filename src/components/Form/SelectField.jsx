@@ -3,7 +3,7 @@ import "/src/inputField.css";
 
 const SelectField = (props) => {
   return (
-    <div className="mySelectField">
+    <div className={props.error ? "mySelectField error" : "mySelectField"}>
       <label htmlFor={props.id}>
         {props.label}
         <span className="required">*</span>
@@ -15,7 +15,7 @@ const SelectField = (props) => {
         placeholder={props.placeholder}
         list={props.list}
         value={props.value}
-        defaultValue={0}
+        onChange={props.onChange}
         required
       >
         {props.option.map((v, i) => (

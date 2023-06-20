@@ -1,7 +1,19 @@
 .myInputField,
 .mySelectField {
+  width: 100%;
   height: 83px;
   display: block;
+}
+
+/* 數字箭頭消失 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .myInputField .required,
@@ -11,6 +23,7 @@
 }
 .myInputField > label,
 .mySelectField > label {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -28,8 +41,7 @@
 .myInputField > input,
 .mySelectField select {
   padding: 8px 16px;
-  gap: 10px;
-  width: 326px;
+  width: 100%;
   height: 57px;
   background: #ffffff;
   border: 1px solid var(--primaryColor1);
@@ -55,4 +67,8 @@
   appearance: none;
   background: url("/public/🎨Colordropdown.png") no-repeat 95% center
     transparent;
+}
+.error input,
+.error select {
+  outline: 3px solid #e06d6d;
 }

@@ -1,0 +1,25 @@
+.storeContainer {
+  background-color: var(--primaryColor1);
+  padding: 40px 0;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.storeContainer .text {
+  width: 303px;
+  height: 80px;
+  margin: 0 auto 24px;
+}
+
+.storeContainer .text > p {
+  color: #fff;
+  font-style: 20px;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.storeWrap {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+.wave {
+  background: url("backgroundWave.svg");
+  object-fit: cover;
+  height: 110px;
+  animation: wave 100s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 10000px;
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import "/src/inputField.css";
 const InputField = (props) => {
   return (
-    <div className="myInputField">
+    <div className={props.error ? "myInputField error" : "myInputField"}>
       <label htmlFor={props.id}>
         {props.label}
         <span className="required">*</span>
@@ -14,7 +14,9 @@ const InputField = (props) => {
         placeholder={props.placeholder}
         list={props.list}
         value={props.value}
-        required
+        required={props.required}
+        maxLength={props.maxLength}
+        onChange={props.onChange}
       />
       <div className="helperText">{props.error}</div>
     </div>
