@@ -151,7 +151,7 @@ const Form = () => {
       <form className="form" noValidate>
         <div className="formTitle">
           FORM
-          <img src="/turtle.svg" alt="title" className="turtle" />
+          <img src="turtle.svg" alt="title" className="turtle" />
         </div>
 
         <InputField

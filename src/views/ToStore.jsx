@@ -10,7 +10,7 @@ const ToStore = () => {
       </div>
 
       <div className="storeWrap">
-        <img src="/public/market.svg" alt="market" />
+        <img src="market.svg" alt="market" />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Lighthouse = () => {
         </div>
         <div className="img-wrap">
           <img
-            src="/public/lighthouse.svg"
+            src="lighthouse.svg"
             alt="lighthouse"
             className="lighthouseImg"
           />

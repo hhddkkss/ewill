@@ -20,10 +20,10 @@ const FirstSection = () => {
         className={"buttonAnimation"}
       ></DefaultButton>
       <div className="content">
-        <img src="/sup.svg" className="sup" />
-        <img src="/oars.png" className="oars" />
-        <img src="/public/bubble.svg" alt="bubble1" className="bubble1" />
-        <img src="/public/bubble.svg" alt="bubble2" className="bubble2" />
+        <img src="sup.svg" className="sup" />
+        <img src="oars.png" className="oars" />
+        <img src="bubble.svg" alt="bubble1" className="bubble1" />
+        <img src="bubble.svg" alt="bubble2" className="bubble2" />
         <Title text={"paragraph"}></Title>
         <ol className="paragraphWrap">
           {paragraph1.map((item, i) => (
