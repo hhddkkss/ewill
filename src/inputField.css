@@ -1,0 +1,58 @@
+.myInputField,
+.mySelectField {
+  height: 83px;
+  display: block;
+}
+
+.myInputField .required,
+.mySelectField .required {
+  color: var(--primaryColor2);
+  font-size: 14px;
+}
+.myInputField > label,
+.mySelectField > label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--primaryColor1);
+}
+
+.myInputField > input#store {
+  background: url("/public/🎨Colordropdown.png") no-repeat 95% center
+    transparent;
+}
+.myInputField input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+.myInputField > input,
+.mySelectField select {
+  padding: 8px 16px;
+  gap: 10px;
+  width: 326px;
+  height: 57px;
+  background: #ffffff;
+  border: 1px solid var(--primaryColor1);
+  border-radius: 20px;
+}
+.myInputField > input:focus-visible,
+.mySelectField select:focus-visible {
+  outline: 3px solid #93bbf9;
+}
+
+.helperText {
+  color: #e06d6d;
+  font-size: var(--caption);
+}
+
+.mySelectField option {
+  font-size: 16px;
+  line-height: 140%;
+}
+.mySelectField select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("/public/🎨Colordropdown.png") no-repeat 95% center
+    transparent;
+}

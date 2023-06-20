@@ -1,0 +1,25 @@
+.defaultButton {
+  width: 200px;
+  height: 57px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 8px;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  background: #b57556;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.defaultButton:hover {
+  background: #d3a995;
+}
+
+.successButton {
+  color: #e6ffb1;
+}
+.failureButton {
+  color: #ffe3e3;
+}

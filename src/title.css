@@ -1,0 +1,9 @@
+.titleField {
+  color: var(--primaryColor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 125%;
+}

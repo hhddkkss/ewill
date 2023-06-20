@@ -1,0 +1,32 @@
+import React from "react";
+import "/src/inputField.css";
+
+const SelectField = (props) => {
+  return (
+    <div className="mySelectField">
+      <label htmlFor={props.id}>
+        {props.label}
+        <span className="required">*</span>
+      </label>
+      <select
+        type={props.type}
+        name={props.name}
+        id={props.id}
+        placeholder={props.placeholder}
+        list={props.list}
+        value={props.value}
+        defaultValue={0}
+        required
+      >
+        {props.option.map((v, i) => (
+          <option value={i} key={i} disabled={v == "請選擇" && "disabled"}>
+            {v}
+          </option>
+        ))}
+      </select>
+      <div className="helperText">{props.error}</div>
+    </div>
+  );
+};
+
+export default SelectField;
