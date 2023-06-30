@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import InputField from "../components/Form/InputField";
 import "/src/form.css";
 import SelectField from "../components/Form/SelectField";
@@ -36,6 +36,21 @@ const Form = () => {
   const handleFormChange = (e) => {
     const { name, value } = e.target;
     setFormValue((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleValidStore = () => {
+    SetError(errorValue);
+    if (formValue.store.trim()) {
+      //undefined
+      const result = stores.filter((v) => v.includes(formValue.store));
+
+      if (result.length === 0) {
+        SetError((prev) => ({
+          ...prev,
+          store: "no result",
+        }));
+      }
+    }
   };
 
   const handleValidate = (e) => {
@@ -89,7 +104,7 @@ const Form = () => {
     }
 
     //name
-    if (formValue.name.trim() && formValue.name) {
+    if (!formValue.name.trim() && formValue.name) {
       const regex = /^[\u4e00-\u9fa5a-zA-Z\s]+$/;
 
       if (formValue.name.match(regex) === null) {
@@ -110,18 +125,27 @@ const Form = () => {
     }
 
     //amount
-    if (formValue.amount.trim() && formValue.amount < 0) {
-      SetError((prev) => ({
-        ...prev,
-        amount: "Must be greater than 0",
-      }));
-      isValid = false;
-    }
 
     if (!formValue.amount.trim()) {
       SetError((prev) => ({
         ...prev,
         amount: "此欄位為必填",
+      }));
+      isValid = false;
+
+      if (typeof formValue.amount !== "number") {
+        SetError((prev) => ({
+          ...prev,
+          amount: "please input number",
+        }));
+        isValid = false;
+      }
+    }
+
+    if (formValue.amount.trim() && formValue.amount < 0) {
+      SetError((prev) => ({
+        ...prev,
+        amount: "Must be greater than 0",
       }));
       isValid = false;
     }
@@ -140,11 +164,11 @@ const Form = () => {
     } else {
       setButtonText("false");
     }
-
-    console.log(error, "error");
-
-    console.log(formValue, "form");
   };
+
+  useEffect(() => {
+    handleValidStore();
+  }, [formValue.store]);
 
   return (
     <div className="formContainer" id="form">
