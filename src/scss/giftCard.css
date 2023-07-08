@@ -4,29 +4,33 @@
   background: #ffffff;
   box-shadow: 0px 8px 0px #edeef0;
   border-radius: 20px;
-  padding: 10px 8px;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 25px;
 }
-
-.certificate {
+@media screen and (min-width: 768px) {
+  .giftCard {
+    margin-bottom: 9px;
+  }
+}
+.giftCard .certificate {
   position: absolute;
-  top: -25px;
   left: 50%;
+  top: -24px;
   transform: translateX(-50%);
 }
-
-.grade {
+.giftCard .certificate.DCertificate {
+  bottom: 71px;
+}
+.giftCard .certificate .certificate > img {
+  vertical-align: bottom;
+}
+.giftCard .certificate .grade {
   position: absolute;
   top: 20px;
   left: 27px;
   color: #fff;
 }
-
-.quantity {
-  width: 45px;
-  height: 23px;
-  text-align: center;
+.giftCard .quantity {
   background: #fafafa;
   border: 1px solid var(--primaryColor6);
   border-radius: 50px;
@@ -34,26 +38,26 @@
   top: 18px;
   right: 8px;
   color: var(--primaryColor6);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 10px;
 }
-
-.giftName {
-  /* width: 150px; */
+.giftCard .giftName {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 58px;
+  margin-top: 52px;
   text-align: center;
   color: var(--primaryColor6);
 }
-
-.dQuantity {
+.giftCard .dQuantity {
   color: var(--primaryColor7);
   border: 1px solid var(--primaryColor7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.dName {
+.giftCard .dName {
   color: var(--primaryColor7);
-}
+}/*# sourceMappingURL=giftCard.css.map */

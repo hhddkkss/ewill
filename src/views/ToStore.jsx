@@ -1,5 +1,4 @@
-import React from "react";
-import "../toStore.css";
+import "../scss/toStore.css";
 
 const ToStore = () => {
   return (

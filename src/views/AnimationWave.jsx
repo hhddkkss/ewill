@@ -1,5 +1,5 @@
-import React from "react";
-import "../backgroundWave.css";
+import "../scss/backgroundWave.css";
+
 const AnimationWave = () => {
   return <div className="wave"></div>;
 };

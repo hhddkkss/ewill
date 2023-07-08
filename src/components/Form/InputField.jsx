@@ -1,5 +1,5 @@
-import React from "react";
-import "/src/inputField.css";
+import "../../scss/inputField.css";
+
 const InputField = (props) => {
   return (
     <div className={props.error ? "myInputField error" : "myInputField"}>
@@ -7,6 +7,7 @@ const InputField = (props) => {
         {props.label}
         <span className="required">*</span>
       </label>
+
       <input
         type={props.type}
         name={props.name}

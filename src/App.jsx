@@ -1,10 +1,8 @@
-import { useState } from "react";
-
 import FirstSection from "./views/FirstSection";
 import AnimationWave from "./views/AnimationWave";
 import Form from "./views/Form";
 import ThirdSection from "./views/Gift";
-import Lighthouse from "./views/LightHouse";
+import Lighthouse from "./views/Lighthouse";
 import ToStore from "./views/ToStore";
 
 function App() {

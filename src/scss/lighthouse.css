@@ -1,24 +1,23 @@
 .lighthouseContainer {
-  padding: 40px 0;
+  padding: 40px 24px;
   background: var(--primaryColor4);
 }
-
 .lighthouseContainer .wrap {
   width: 274px;
   height: 298px;
   margin: 0 auto;
 }
-.lighthouseContainer .text {
+.lighthouseContainer .wrap .text {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
+  line-height: 140%;
 }
-
-.lighthouseContainer .text::before {
+.lighthouseContainer .wrap .text::before {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 10px;
   content: "";
   width: 1px;
@@ -26,9 +25,9 @@
   background-color: var(--primaryColor1);
   transform: rotate(-15deg);
 }
-.lighthouseContainer .text::after {
+.lighthouseContainer .wrap .text::after {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 10px;
   content: "";
   width: 1px;
@@ -36,15 +35,15 @@
   background-color: var(--primaryColor1);
   transform: rotate(15deg);
 }
-
-.lighthouseContainer .text .number {
+.lighthouseContainer .wrap .text .number {
   color: var(--primaryColor2);
 }
-
-.lighthouseContainer .text .title {
+.lighthouseContainer .wrap .text .title {
   color: var(--primaryColor1);
 }
-
 .lighthouseContainer .wrap .img-wrap {
   text-align: center;
 }
+.lighthouseContainer .wrap .img-wrap img {
+  vertical-align: bottom;
+}/*# sourceMappingURL=lighthouse.css.map */

@@ -1,5 +1,4 @@
-import React from "react";
-import "../../button.css";
+import "../../scss/button.css";
 import failure from "/public/failure.svg";
 import success from "/public/success.svg";
 
@@ -15,7 +14,7 @@ const DefaultButton = (props) => {
           onClick={props.onClick}
         >
           <img src={success} alt="success" />
-          {props.text}
+          success
         </a>
       );
 
@@ -29,7 +28,7 @@ const DefaultButton = (props) => {
             style={props.style}
             onClick={props.onClick}
           >
-            <img src={failure} alt="failure" /> {props.text}
+            <img src={failure} alt="failure" /> failure
           </a>
           <h5 className="failureMessage">This person does not exist</h5>
         </>

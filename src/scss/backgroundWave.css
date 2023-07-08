@@ -1,0 +1,15 @@
+.wave {
+  margin-top: -1px;
+  background: url(https://hhddkkss.github.io/ewill/backgroundWave.svg);
+  height: 109.538px;
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}/*# sourceMappingURL=backgroundWave.css.map */

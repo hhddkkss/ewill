@@ -1,0 +1,52 @@
+.lighthouseContainer {
+  padding: 40px 24px;
+  background: var(--primaryColor4);
+
+  .wrap {
+    width: 274px;
+    height: 298px;
+    margin: 0 auto;
+    .text {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
+      line-height: 140%;
+
+      &::before {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        content: "";
+        width: 1px;
+        height: 75px;
+        background-color: var(--primaryColor1);
+        transform: rotate(-15deg);
+      }
+      &::after {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        content: "";
+        width: 1px;
+        height: 75px;
+        background-color: var(--primaryColor1);
+        transform: rotate(15deg);
+      }
+      .number {
+        color: var(--primaryColor2);
+      }
+      .title {
+        color: var(--primaryColor1);
+      }
+    }
+
+    .img-wrap {
+      text-align: center;
+      img {
+        vertical-align: bottom;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.giftContainer {
+  background-color: #e2d9d3;
+  background-image: url("/sand.png");
+  padding: 64px 21px 24px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding: 64px 24px 40px;
+  }
+  .giftCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 598px;
+      gap: 32px;
+    }
+  }
+}

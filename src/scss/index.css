@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Righteous&display=swap");
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primaryColor1: #204379;
+  --primaryColor2: #b57556;
+  --primaryColor3: #dae4f1;
+  --primaryColor4: #e2d9d3;
+  --primaryColor5: #d3c3b8;
+  --primaryColor6: #b3b960;
+  --primaryColor7: #a0bcc8;
+  --text-color-text-color-7: #bdbdbd;
+  --h1: 40px;
+  --h2: 32px;
+  --h3: 24px;
+  --h4: 20px;
+  --h5: 18px;
+  --title: 16px;
+  --body: 16px;
+  --input: 14px;
+  --subtitle: 14px;
+  --caption: 12px;
+  --small: 11px;
+}/*# sourceMappingURL=index.css.map */

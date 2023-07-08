@@ -1,12 +1,21 @@
 .formContainer {
-  padding: 43px 24px 53px;
+  padding: 67.46px 24px 58px;
   background-color: var(--primaryColor4);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.form {
+@media screen and (min-width: 768px) {
+  .formContainer {
+    padding: 73.46px 24px 58px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .formContainer {
+    padding: 81.46px 24px 58px;
+  }
+}
+.formContainer .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,12 +28,13 @@
   position: relative;
   margin-bottom: 40px;
   width: 100%;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .formContainer .form {
     max-width: 808px;
   }
 }
-
-.formTitle {
+.formContainer .form .formTitle {
   width: 123px;
   height: 43px;
   padding: 10px 20px;
@@ -43,25 +53,21 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 0.2em;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .formContainer .form .formTitle {
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
   }
 }
-
-.turtle {
+.formContainer .form .formTitle .turtle {
   position: absolute;
   top: -20px;
   right: -40px;
   transform: rotate(-30deg);
   animation: turtleMove 20s linear forwards;
 }
-
-#buttonAnimation {
-  animation: scale 3s linear infinite;
-}
-
 @keyframes turtleMove {
   0% {
     transform: rotate(-15deg);
@@ -88,26 +94,23 @@
     top: -10px;
     right: 93px;
   }
-
   80% {
     top: -20px;
     right: 103px;
   }
-
   100% {
     top: -20px;
     right: 120px;
   }
 }
-
 @keyframes scale {
   0% {
     transform: scale(1);
   }
   70% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
   }
-}
+}/*# sourceMappingURL=form.css.map */

@@ -1,25 +1,23 @@
 .storeContainer {
   background-color: var(--primaryColor1);
-  padding: 40px 0;
+  padding: 40px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   border-radius: 50px 50px 0px 0px;
 }
-
 .storeContainer .text {
-  width: 303px;
-  height: 80px;
-  margin: 0 auto 24px;
+  margin: 0 auto;
 }
-
-.storeContainer .text > p {
+.storeContainer .text p {
   color: #fff;
-  font-style: 20px;
   font-weight: 700;
+  font-size: 20px;
   line-height: 200%;
-  letter-spacing: 0.2em;
+  letter-spacing: 4px;
   text-align: center;
 }
-
-.storeWrap {
+.storeContainer .storeWrap {
   display: flex;
   justify-content: center;
-}
+}/*# sourceMappingURL=toStore.css.map */

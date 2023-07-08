@@ -1,5 +1,4 @@
-import React from "react";
-import "/src/inputField.css";
+
 
 const SelectField = (props) => {
   return (

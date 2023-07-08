@@ -1,0 +1,140 @@
+@mixin field() {
+  width: 100%;
+  height: 83px;
+  display: block;
+}
+
+@mixin required() {
+  color: var(--primaryColor2);
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+@mixin label() {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--primaryColor1);
+  margin-bottom: 4px;
+}
+
+@mixin formItem() {
+  padding: 8px 16px;
+  width: 100%;
+  height: 57px;
+  background: #ffffff;
+  border: 1px solid var(--primaryColor1);
+  border-radius: 20px;
+  margin-bottom: 4px;
+}
+
+@mixin focusVisible() {
+  outline: 3px solid #93bbf9;
+}
+
+@mixin helperText() {
+  color: #e06d6d;
+  font-size: var(--caption);
+}
+
+@mixin error() {
+  border: none;
+  outline: 3px solid #e06d6d;
+}
+
+@mixin focus() {
+  border: none;
+}
+
+.myInputField {
+  @include field;
+
+  input {
+    @include formItem;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input::placeholder {
+    color: var(--text-color-text-color-7);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  input#store {
+    background: url("/🎨Colordropdown.png") no-repeat 95% center transparent;
+  }
+
+  input::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+
+  input:focus-visible {
+    @include focusVisible;
+  }
+
+  input:focus {
+    @include focus;
+  }
+
+  .required {
+    @include required;
+  }
+  label {
+    @include label;
+  }
+
+  .helperText {
+    @include helperText;
+  }
+  .error input {
+    @include error;
+  }
+}
+
+.mySelectField {
+  @include field;
+
+  .required {
+    @include required;
+  }
+
+  select {
+    @include formItem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url("/🎨Colordropdown.png") no-repeat 95% center transparent;
+  }
+  select:focus-visible {
+    @include focusVisible;
+  }
+
+  label {
+    @include label;
+  }
+  .helperText {
+    @include helperText;
+  }
+
+  option {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .error select {
+    @include error;
+  }
+
+  select:focus {
+    @include focus;
+  }
+}

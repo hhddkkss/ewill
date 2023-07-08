@@ -1,5 +1,4 @@
-import React from "react";
-import "../gift.css";
+import "../scss/gift.css";
 import GiftCard from "../components/GiftCard";
 
 const giftData = [

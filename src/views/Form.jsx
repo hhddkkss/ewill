@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import InputField from "../components/Form/InputField";
-import "/src/form.css";
+import "../scss/form.css";
 import SelectField from "../components/Form/SelectField";
 import DefaultButton from "../components/Button";
 
@@ -41,7 +41,6 @@ const Form = () => {
   const handleValidStore = () => {
     SetError(errorValue);
     if (formValue.store.trim()) {
-      //undefined
       const result = stores.filter((v) => v.includes(formValue.store));
 
       if (result.length === 0) {
@@ -65,7 +64,7 @@ const Form = () => {
 
     if (formValue.store.trim()) {
       const result = stores.find((v) => v === formValue.store);
-
+      //undefined
       if (!result) {
         SetError((prev) => ({
           ...prev,
@@ -188,6 +187,7 @@ const Form = () => {
           onChange={handleFormChange}
           error={error.store}
           required={true}
+          placeholder="PlaceHolder Text"
         ></InputField>
         <InputField
           type={"text"}
@@ -198,6 +198,7 @@ const Form = () => {
           onChange={handleFormChange}
           error={error.name}
           required={true}
+          placeholder="PlaceHolder Text"
         ></InputField>
         <InputField
           type={"tel"}
@@ -209,6 +210,7 @@ const Form = () => {
           error={error.phone}
           maxLength="10"
           required={true}
+          placeholder="PlaceHolder Text"
         ></InputField>
         <InputField
           type={"number"}
@@ -219,6 +221,7 @@ const Form = () => {
           onChange={handleFormChange}
           required={true}
           error={error.amount}
+          placeholder="PlaceHolder Text"
         ></InputField>
         <SelectField
           type={"select"}

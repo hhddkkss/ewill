@@ -1,10 +1,10 @@
 import React from "react";
 import cactus from "/public/cactus.svg";
-import "/src/title.css";
+import "../../scss/title.css";
 
-const Title = ({ text }) => {
+const Title = ({ text, style }) => {
   return (
-    <div className="titleField">
+    <div className="titleField" style={{ ...style }}>
       <img src={cactus} />
       {text}
       <img src={cactus} />

@@ -1,5 +1,4 @@
-import React from "react";
-import "../lighthouse.css";
+import "../scss/lighthouse.css";
 
 const Lighthouse = () => {
   return (
