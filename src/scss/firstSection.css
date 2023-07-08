@@ -14,7 +14,6 @@
   }
 }
 .FirstSecContainer .backgroundWave {
-  margin-left: 39px;
   width: 1414.743px;
   height: 739.107px;
   background: url("/wave.png") no-repeat;
@@ -25,6 +24,8 @@
   .FirstSecContainer .backgroundWave {
     background: url("/whiteWave.png") no-repeat;
     margin-top: 47.46px;
+    width: 4784.156px;
+    height: 586.107px;
     top: 0;
     background-size: 4784.156px 586.107px;
     background-position: -1693.38px 0;
@@ -34,9 +35,10 @@
   .FirstSecContainer .backgroundWave {
     background: url("/whiteWave1400.png") no-repeat;
     margin-top: 47.46px;
+    width: 4784.156px;
+    height: 586.107px;
     top: 0;
     background-size: 4784.156px 586.107px;
-    background-position: -1693.38px 0;
   }
 }
 .FirstSecContainer .titleContainer {
